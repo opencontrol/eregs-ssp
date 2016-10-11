@@ -11,10 +11,9 @@ services:
     image: eregs/parser
     volumes:
       - ./eregs_extensions:/app/extensions
-      - cache:/app/cache
+      - ./input:/app/input
     entrypoint: /app/extensions/docker-start.sh
     depends_on:
       - web
 volumes:
   atf-db:
-  cache:
