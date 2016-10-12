@@ -24,10 +24,6 @@
       <SECHD>Sec.</SECHD>
       <SUBJGRP>
         <HD SOURCE="HED">General</HD>
-        <SECTNO>646.141</SECTNO>
-        <SUBJECT>Scope of part.</SUBJECT>
-        <SECTNO>646.142</SECTNO>
-        <SUBJECT>Territorial extent.</SUBJECT>
         <SECTNO>646.143</SECTNO>
         <SUBJECT>Meaning of terms.</SUBJECT>
       </SUBJGRP>
@@ -67,16 +63,6 @@
     </EDNOTE>
     <SUBJGRP>
       <HD SOURCE="HED">General</HD>
-      <SECTION>
-        <SECTNO>§ 646.141</SECTNO>
-        <SUBJECT>Scope of part. Part Part</SUBJECT>
-        <P>The regulations in this subpart relate to the distribution of cigarettes in excess of 60,000 in a single transaction.</P>
-      </SECTION>
-      <SECTION>
-        <SECTNO>§ 646.142</SECTNO>
-        <SUBJECT>Territorial extent.</SUBJECT>
-        <P>The provisions of the regulations in this part apply in the several States of the United States, the District of Columbia, the Commonwealth of Puerto Rico, and the Virgin Islands.</P>
-      </SECTION>
       <SECTION>
         <SECTNO>§ 646.143</SECTNO>
         <SUBJECT>Meaning of terms.</SUBJECT>
