@@ -1,12 +1,12 @@
-.reg-footer {    
+.reg-footer {
     @extend .footer-font;
     color:#fff;
-    background: $atf_main_head_background;
+    background: #2c3e50;
     width: 100%;
     padding:30px 15px;
     display:block;
     float:left;
-    
+
     ul {
         width:100%;
         padding:0;
