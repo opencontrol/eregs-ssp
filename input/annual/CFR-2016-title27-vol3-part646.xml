@@ -102,8 +102,9 @@
       <HD SOURCE="HED">AC-1</HD>
       <SECTION>
         <SECTNO>§ 646.146</SECTNO>
-        <SUBJECT>General requirements.</SUBJECT>
-        <P>Each distributor of cigarettes shall keep copies of invoices, bills of lading, or other suitable commercial records relating to each disposition of more than 60,000 cigarettes. Dividing a single agreement for the disposition of more than 60,000 cigarettes into the delivery of smaller components of 60,000 cigarettes or less does not exempt the distributor from the recordkeeping requirements of this part. The distributor shall include the information prescribed in his commercial records of disposition.</P>
+        <SUBJECT>AC-1</SUBJECT>
+        <P>(a) 18F keeps its policies and procedures in an official repository on GitHub, which are circulated to all personnel who use or work on cloud.gov. See https://github.com/18F/compliance-docs/blob/master/AC-Policy.md for details. The General Services Administration (GSA) distributes relevant corporate policies and procedures. Policies and procedures are updated continuously as needed. See the above policy document for details.</P>
+        <P>(b) GSA has a corporate IT Security Policy for this control across the entire agency (http://www.gsa.gov/portal/mediaId/129634/fileName/CIO_21001J_CHGE_1_GSA_Information_Technology_(IT)_Security_Policy_(Posted_Version_4-28-2016).action). 18F lists any system specific procedures at the bottom of each policy document in the GitHub repository.</P>
       </SECTION>
     </SUBJGRP>
     <SUBJGRP>
