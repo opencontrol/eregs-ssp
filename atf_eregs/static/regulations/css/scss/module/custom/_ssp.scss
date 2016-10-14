@@ -3,6 +3,12 @@
 // hide a bunch of things that are specific to regulations that don't make sense for SSPs
 .toc-nav__base .toc-section-marker,
 #rulings,
-.header-label {
+.header-label,
+.landing-main .small-header {
   display: none;
+}
+
+#site-header {
+  // This is working around an upstream bug, where the header is taking up space on the main landing page when it shouldn't be.
+  height: inherit;
 }
