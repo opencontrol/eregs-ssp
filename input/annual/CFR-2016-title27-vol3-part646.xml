@@ -28,21 +28,16 @@
         <SUBJECT>Meaning of terms.</SUBJECT>
       </SUBJGRP>
       <SUBJGRP>
-        <HD SOURCE="HED">AC-1</HD>
+        <HD SOURCE="HED">Access Control Policy and Procedures</HD>
         <SECTNO>646.146</SECTNO>
-        <SUBJECT>Access Control Policy and Procedures</SUBJECT>
+        <SUBJECT>AC-1</SUBJECT>
       </SUBJGRP>
       <SUBJGRP>
-        <HD SOURCE="HED">Other Provisions Relating to the Distribution of Cigarettes</HD>
+        <HD SOURCE="HED">Account Management</HD>
         <SECTNO>646.153</SECTNO>
-        <SUBJECT>Authority of appropriate ATF officers to enter business premises.</SUBJECT>
-      </SUBJGRP>
-      <SUBJGRP>
-        <HD SOURCE="HED">Penalties and Forfeitures</HD>
+        <SUBJECT>AC-2</SUBJECT>
         <SECTNO>646.154</SECTNO>
-        <SUBJECT>Penalties.</SUBJECT>
-        <SECTNO>646.155</SECTNO>
-        <SUBJECT>Forfeitures.</SUBJECT>
+        <SUBJECT>AC-2 (1)</SUBJECT>
       </SUBJGRP>
     </CONTENTS>
     <AUTH>
@@ -99,7 +94,7 @@
       </SECTION>
     </SUBJGRP>
     <SUBJGRP>
-      <HD SOURCE="HED">AC-1</HD>
+      <HD SOURCE="HED">Access Control Policy and Procedures</HD>
       <SECTION>
         <SECTNO>§ 646.146</SECTNO>
         <SUBJECT>AC-1</SUBJECT>
@@ -108,30 +103,25 @@
       </SECTION>
     </SUBJGRP>
     <SUBJGRP>
-      <HD SOURCE="HED">Other Provisions Relating to the Distribution of Cigarettes</HD>
+      <HD SOURCE="HED">Account Management</HD>
       <SECTION>
         <SECTNO>§ 646.153</SECTNO>
-        <SUBJECT>Authority of appropriate ATF officers to enter business premises.</SUBJECT>
-        <P>Any appropriate ATF officer may enter the business premises of any distributor of cigarettes to inspect the records required by §§ 646.146, or to inspect any cigarettes stored on the premises—</P>
-        <P>(a) Pursuant to duly issued search warrant or an administrative inspection warrant; or</P>
-        <P>(b) Upon the consent of the distributor to enter his premises.</P>
-        <CITA>[45 FR 48612, July 21, 1980, as amended by T.D. ATF-472, 67 FR 8881, Feb. 27, 2002]</CITA>
+        <SUBJECT>AC-2</SUBJECT>
+        <P>(a) See Table 9-1 User Roles and Privileges.</P>
+        <P>(b) The System Owner has assigned Cloud Operations as the account managers for all information system accounts in AWS and cloud.gov. Customer Responsibility: External Application System Owners, whose applications reside on the cloud.gov platform, have the responsibility to assign personnel to all the roles labeled as “external” in the Table 9-1 User Roles and Privileges and are responsible for all subsequent elements of AC-1, except where noted.</P>
+        <P>(c) Cloud Operations is granted access to AWS and cloud.gov if:</P>
+        <P>(1) User has passed all pre-requisites, background checks, and biometric collections necessary for a position of "Public Trust" at GSA. This is inclusive of all requirements necessary to receive a Personal Identity Verification (PIV) Credential that is in compliance with the Homeland Security Presidential Directive 12 (HSPD-12) via the USAccess Program ( http://fedidcard.gov/ ), itself a program run by GSA.</P>
+        <P>(2) Contingent on the above, user has been entered into the GSA Credential and Identity Management System (GCIMS), per the approval of the GSA Office of Mission Assurance (OMA) Identity, Credential and Access Management (ICAM) Division.</P>
+        <P>(3) Contingent on the above, user has received final approval in GCIMS and has received a username, password, and multi-factor authentication token (per system) to access GSA SecureAuth.</P>
+        <P>(4) User has completed all necessary training in GSA's Online Learning University (OLU) as required by AC-1.</P>
+        <P>(5) User's 18F Supervisor has assigned the user to a technical internal role through 18F staffing processes, or an 18F Contracting Officer Representative (COR) has assigned a contractor to a technical internal role.</P>
+        <P>(d) See Table 9-1 User Roles and Privileges.</P>
       </SECTION>
-    </SUBJGRP>
-    <SUBJGRP>
-      <HD SOURCE="HED">Penalties and Forfeitures</HD>
       <SECTION>
         <SECTNO>§ 646.154</SECTNO>
-        <SUBJECT>Penalties.</SUBJECT>
-        <P>(a) Any person who knowingly ships, transports, receives, possesses, sells, distributes, or purchases contraband cigarettes shall be fined not more than $100,000 or imprisoned not more than five years, or both.</P>
-        <P>(b) Any person who knowingly violates any regulation contained in this part or makes any false statement or misrepresentation with respect to the information required to be recorded by this part shall be fined not more than $5,000 or imprisoned not more than three years, or both.</P>
-      </SECTION>
-      <SECTION>
-        <SECTNO>§ 646.155</SECTNO>
-        <SUBJECT>Forfeitures.</SUBJECT>
-        <P>(a) Any contraband cigarettes involved in any violation of the provisions of 18 U.S.C. chapter 114 shall be subject to seizure and forfeiture. All provisions of the Internal Revenue Code of 1954 (title 26 U.S.C.) relating to the seizure, forfeiture, and disposition of firearms, as defined in section 5845(a) of that Code, shall, so far as applicable, extend to seizures and forfeitures of contraband cigarettes under the provisions of 18 U.S.C. chapter 114.</P>
-        <P>(b) Any vessel, vehicle or aircraft used to transport, carry, convey, or conceal or possess any contraband cigarettes with respect to which there has been committed any violation of any provision of 18 U.S.C. chapter 114 or the regulations in this subpart shall be subject to seizure and forfeiture under the Customs laws, as provided by the Act of August 9, 1939 (49 U.S.C. 781-788).</P>
-        <SECAUTH>(18 U.S.C. 2344; 53 Stat. 1291 (49 U.S.C. 782))</SECAUTH>
+        <SUBJECT>AC-2 (1)</SUBJECT>
+        <P>AWS: IAM automatically deactivates account via automatic password expiration every 90 days. All account creations, modifications, and deletions are automatically recorded by CloudTrail.</P>
+        <P>cloud.gov: UAA Servers have their passwords reset every 90 days, implemented via automation in GSA SecureAuth. The deletion of a GSA SecureAuth account deactivates user access across all integrations.</P>
       </SECTION>
     </SUBJGRP>
   </PART>
