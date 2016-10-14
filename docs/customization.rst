@@ -57,7 +57,7 @@ The header and footer of each page have been lightly customized to tie in with
 ATF's branding. This includes linking to other ATF sites and including ATF's
 logo. If you need to modify the content here,
 investigate ``atf_eregs/templates/regulations/favicon.html``,
-``full_footer.html``, ``logo.html``, etc. Similarly, ``about.html`` defines
+``logo.html``, etc. Similarly, ``about.html`` defines
 the content present on the "About" page.
 
 Templates in the atf-eregs repository provide customizations that override the core templates provided by the generic/non-agency-specific eRegulations libraries. For example, the ``about.html`` file in the atf-eregs repository only contains part of the content you see live on the ATF eRegulations "about" page. This is because most of that "about" page content is provided by the ``about.html`` template in the shared/non-agency-specific library (``regulations-site``).
