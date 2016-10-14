@@ -1,0 +1,8 @@
+// overrides specific to System Security Plans
+
+// hide a bunch of things that are specific to regulations that don't make sense for SSPs
+.toc-nav__base .toc-section-marker,
+#rulings,
+.header-label {
+  display: none;
+}
