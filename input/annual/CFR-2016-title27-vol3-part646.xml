@@ -25,7 +25,7 @@
       <SUBJGRP>
         <HD SOURCE="HED">General</HD>
         <SECTNO>646.143</SECTNO>
-        <SUBJECT>Definitions.</SUBJECT>
+        <SUBJECT>Meaning of terms.</SUBJECT>
       </SUBJGRP>
       <SUBJGRP>
         <HD SOURCE="HED">Access Control Policy and Procedures</HD>
@@ -56,7 +56,7 @@
       <HD SOURCE="HED">General</HD>
       <SECTION>
         <SECTNO>§ 646.143</SECTNO>
-        <SUBJECT>Definitions.</SUBJECT>
+        <SUBJECT>Meaning of terms.</SUBJECT>
         <P>When used in this part, terms are defined as follows in this section. Words in the plural shall include the singular, and vice versa.</P>
         <P><E T="03">AWS.</E> Amazon Web Services.</P>
         <P><E T="03">CloudTrail.</E> AWS CloudTrail is a web service that records AWS API calls for accounts, and is then able to deliver log files. CloudTrail automatically sends AWS logs to GSA IT so they can help monitor our system.</P>
