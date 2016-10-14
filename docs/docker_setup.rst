@@ -18,7 +18,7 @@ repository and then run Docker Compose:
 
   git clone https://github.com/18F/atf-eregs.git
   cd atf-eregs
-  docker-compose up
+  ./script/start
 
 This a great deal of time, depending on your hardware. Once it's all done,
 navigate your browser to `http://0.0.0.0:8000/ <http://0.0.0.0:8000/>`_.

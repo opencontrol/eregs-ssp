@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+set -x
+
+# clean up old data
+docker-compose down -v
+
+docker-compose up
