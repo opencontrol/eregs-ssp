@@ -8,7 +8,7 @@
     <DATE>2016-04-01</DATE>
     <ORIGINALDATE>2016-04-01</ORIGINALDATE>
     <COVERONLY>false</COVERONLY>
-    <TITLE>CONTRABAND CIGARETTES</TITLE>
+    <TITLE>cloud.gov System Security Plan</TITLE>
     <GRANULENUM>646</GRANULENUM>
     <HEADING>PART 646</HEADING>
     <ANCESTORS>
@@ -19,13 +19,13 @@
   </FDSYS>
   <PART>
     <EAR>Pt. 646</EAR>
-    <HD SOURCE="HED">PART 646—CONTRABAND CIGARETTES</HD>
+    <HD SOURCE="HED">PART 646—cloud.gov System Security Plan</HD>
     <CONTENTS>
       <SECHD>Sec.</SECHD>
       <SUBJGRP>
         <HD SOURCE="HED">General</HD>
         <SECTNO>646.143</SECTNO>
-        <SUBJECT>Meaning of terms.</SUBJECT>
+        <SUBJECT>Definitions.</SUBJECT>
       </SUBJGRP>
       <SUBJGRP>
         <HD SOURCE="HED">Access Control Policy and Procedures</HD>
@@ -56,7 +56,7 @@
       <HD SOURCE="HED">General</HD>
       <SECTION>
         <SECTNO>§ 646.143</SECTNO>
-        <SUBJECT>Meaning of terms.</SUBJECT>
+        <SUBJECT>Definitions.</SUBJECT>
         <P>When used in this part, terms are defined as follows in this section. Words in the plural shall include the singular, and vice versa.</P>
         <P><E T="03">AWS.</E> Amazon Web Services.</P>
         <P><E T="03">CloudTrail.</E> AWS CloudTrail is a web service that records AWS API calls for accounts, and is then able to deliver log files. CloudTrail automatically sends AWS logs to GSA IT so they can help monitor our system.</P>
