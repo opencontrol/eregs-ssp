@@ -30,22 +30,6 @@ $_banner_color: transparentize($atf_hero_background, 0.5);
 
     /* Feels like these should be defined in the template, but we want access
        to the hero_background LESS var */
-    &.banner-447 {
-      background-image: linear-gradient($_banner_color, $_banner_color),
-                        url('../../atf_eregs/447-landing.jpg');
-    }
-    &.banner-478 {
-      background-image: linear-gradient($_banner_color, $_banner_color),
-                        url('../../atf_eregs/478-landing.jpg');
-    }
-    &.banner-479 {
-      background-image: linear-gradient($_banner_color, $_banner_color),
-                        url('../../atf_eregs/479-landing.jpg');
-    }
-    &.banner-555 {
-      background-image: linear-gradient($_banner_color, $_banner_color),
-                        url('../../atf_eregs/555-landing.jpg');
-    }
     &.banner-646 {
       background-image: linear-gradient($_banner_color, $_banner_color),
                         url('../../atf_eregs/646-landing.jpg');
