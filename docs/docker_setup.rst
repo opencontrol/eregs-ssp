@@ -22,3 +22,17 @@ repository and then run Docker Compose:
 
 This a great deal of time, depending on your hardware. Once it's all done,
 navigate your browser to `http://0.0.0.0:8000/ <http://0.0.0.0:8000/>`_.
+
+If you're tweaking `the XML input file <input/annual/CFR-2016-title27-vol3-part646.xml>`_, start the server with the following instead:
+
+.. code-block:: bash
+
+  docker-compose run web
+
+Then run the parser from a separate terminal:
+
+.. code-block:: bash
+
+  docker-compose run parser
+
+After the XML file is modified, re-run this last command and reload the page to see the changes reflected.
