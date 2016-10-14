@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="cfr.xsl"?>
+<CFRGRANULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CFRMergedXML.xsd">
+  <FDSYS>
+    <CFRTITLE>27</CFRTITLE>
+    <CFRTITLETEXT>Alcohol, Tobacco Products and Firearms</CFRTITLETEXT>
+    <VOL>3</VOL>
+    <DATE>2016-04-01</DATE>
+    <ORIGINALDATE>2016-04-01</ORIGINALDATE>
+    <COVERONLY>false</COVERONLY>
+    <TITLE>cloud.gov System Security Plan</TITLE>
+    <GRANULENUM>646</GRANULENUM>
+    <HEADING>PART 646</HEADING>
+    <ANCESTORS>
+      <PARENT HEADING="Title 27" SEQ="2">Alcohol, Tobacco Products, and Firearms</PARENT>
+      <PARENT HEADING="CHAPTER II" SEQ="1">BUREAU OF ALCOHOL, TOBACCO, FIREARMS, AND EXPLOSIVES, DEPARTMENT OF JUSTICE</PARENT>
+      <PARENT HEADING="SUBCHAPTER D" SEQ="0">MISCELLANEOUS REGULATIONS RELATING TO ALCOHOL AND TOBACCO</PARENT>
+    </ANCESTORS>
+  </FDSYS>
+  <PART>
+    <EAR>Pt. 646</EAR>
+    <HD SOURCE="HED">PART 646—cloud.gov System Security Plan</HD>
+    <CONTENTS>
+      <SECHD>Sec.</SECHD>
+      <SUBJGRP>
+        <HD SOURCE="HED">General</HD>
+        <SECTNO>646.143</SECTNO>
+        <SUBJECT>Meaning of terms.</SUBJECT>
+      </SUBJGRP>
+      <SUBJGRP>
+        <HD SOURCE="HED">Access Control Policy and Procedures</HD>
+        <SECTNO>646.146</SECTNO>
+        <SUBJECT>AC-1</SUBJECT>
+      </SUBJGRP>
+      <SUBJGRP>
+        <HD SOURCE="HED">Account Management</HD>
+        <SECTNO>646.153</SECTNO>
+        <SUBJECT>AC-2</SUBJECT>
+        <SECTNO>646.154</SECTNO>
+        <SUBJECT>AC-2 (1)</SUBJECT>
+      </SUBJGRP>
+    </CONTENTS>
+    <AUTH>
+      <HD SOURCE="HED">Authority:</HD>
+      <P>18 U.S.C. 2341-2346, unless otherwise noted.</P>
+    </AUTH>
+    <SOURCE>
+      <HD SOURCE="HED">Source:</HD>
+      <P>45 FR 48612, July 21, 1980, unless otherwise noted. Redesignated by T.D. ATF-487, 68 FR 3753, Jan. 24, 2003.</P>
+    </SOURCE>
+    <EDNOTE>
+      <HD SOURCE="HED">Editorial Note:</HD>
+      <P>Nomenclature changes to part 646 appear by T.D. ATF-487, 68 FR 4753, Jan. 24, 2003.</P>
+    </EDNOTE>
+    <SUBJGRP>
+      <HD SOURCE="HED">General</HD>
+      <SECTION>
+        <SECTNO>§ 646.143</SECTNO>
+        <SUBJECT>Meaning of terms.</SUBJECT>
+        <P>When used in this part, terms are defined as follows in this section. Words in the plural shall include the singular, and vice versa. bla bla bla</P>
+        <P><E T="03">AWS.</E> Amazon Web Services.</P>
+        <P><E T="03">CloudTrail.</E> AWS CloudTrail is a web service that records AWS API calls for accounts, and is then able to deliver log files. CloudTrail automatically sends AWS logs to GSA IT so they can help monitor our system.</P>
+        <P><E T="03">GitHub.</E> A service cloud.gov uses to store and collaborate on code, configuration, and documentation.</P>
+        <P><E T="03">IAM.</E> AWS Identity and Access Management.</P>
+        <P><E T="03">Repository.</E> The code and issue tracker relating to a single software component.</P>
+        <P><E T="03">SecureAuth.</E> The authentication system offered by GSA, leveraged by the UAA server.</P>
+        <P><E T="03">UAA.</E> cloud.gov's User Account and Authentication Server. UAA provides account management, authentication, and authorization. It integrates with customer enterprise identity systems.</P>
+      </SECTION>
+    </SUBJGRP>
+    <SUBJGRP>
+      <HD SOURCE="HED">Access Control Policy and Procedures</HD>
+      <SECTION>
+        <SECTNO>§ 646.146</SECTNO>
+        <SUBJECT>AC-1</SUBJECT>
+        <P>(a) 18F keeps its policies and procedures in an official repository on GitHub, which are circulated to all personnel who use or work on cloud.gov. See https://github.com/18F/compliance-docs/blob/master/AC-Policy.md for details. The General Services Administration (GSA) distributes relevant corporate policies and procedures. Policies and procedures are updated continuously as needed. See the above policy document for details.</P>
+        <P>(b) GSA has a corporate IT Security Policy for this control across the entire agency (http://www.gsa.gov/portal/mediaId/129634/fileName/CIO_21001J_CHGE_1_GSA_Information_Technology_(IT)_Security_Policy_(Posted_Version_4-28-2016).action). 18F lists any system specific procedures at the bottom of each policy document in the GitHub repository.</P>
+      </SECTION>
+    </SUBJGRP>
+    <SUBJGRP>
+      <HD SOURCE="HED">Account Management</HD>
+      <SECTION>
+        <SECTNO>§ 646.153</SECTNO>
+        <SUBJECT>AC-2</SUBJECT>
+        <P>(a) See Table 9-1 User Roles and Privileges.</P>
+        <P>(b) The System Owner has assigned Cloud Operations as the account managers for all information system accounts in AWS and cloud.gov. Customer Responsibility: External Application System Owners, whose applications reside on the cloud.gov platform, have the responsibility to assign personnel to all the roles labeled as “external” in the Table 9-1 User Roles and Privileges and are responsible for all subsequent elements of AC-1, except where noted.</P>
+        <P>(c) Cloud Operations is granted access to AWS and cloud.gov if:</P>
+        <P>(1) User has passed all pre-requisites, background checks, and biometric collections necessary for a position of "Public Trust" at GSA. This is inclusive of all requirements necessary to receive a Personal Identity Verification (PIV) Credential that is in compliance with the Homeland Security Presidential Directive 12 (HSPD-12) via the USAccess Program ( http://fedidcard.gov/ ), itself a program run by GSA.</P>
+        <P>(2) Contingent on the above, user has been entered into the GSA Credential and Identity Management System (GCIMS), per the approval of the GSA Office of Mission Assurance (OMA) Identity, Credential and Access Management (ICAM) Division.</P>
+        <P>(3) Contingent on the above, user has received final approval in GCIMS and has received a username, password, and multi-factor authentication token (per system) to access GSA SecureAuth.</P>
+        <P>(4) User has completed all necessary training in GSA's Online Learning University (OLU) as required by AC-1.</P>
+        <P>(5) User's 18F Supervisor has assigned the user to a technical internal role through 18F staffing processes, or an 18F Contracting Officer Representative (COR) has assigned a contractor to a technical internal role.</P>
+        <P>(d) See Table 9-1 User Roles and Privileges.</P>
+      </SECTION>
+      <SECTION>
+        <SECTNO>§ 646.154</SECTNO>
+        <SUBJECT>AC-2 (1)</SUBJECT>
+        <P>AWS: IAM automatically deactivates account via automatic password expiration every 90 days. All account creations, modifications, and deletions are automatically recorded by CloudTrail.</P>
+        <P>cloud.gov: UAA Servers have their passwords reset every 90 days, implemented via automation in GSA SecureAuth. The deletion of a GSA SecureAuth account deactivates user access across all integrations.</P>
+      </SECTION>
+    </SUBJGRP>
+  </PART>
+</CFRGRANULE>

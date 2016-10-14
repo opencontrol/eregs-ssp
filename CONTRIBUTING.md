@@ -37,17 +37,6 @@ The most common workflow is:
 * Travis CI runs the test suite and a PEP8 linter on GitHub PRs. PRs should only
   be merged when Travis is green.
 
-## Forking vs Branching
-
-This team prefers forking.
-
-The rationale for preferring forking is that all contributors work the same way,
-regardless of whether or not they may commit directly to the canonical
-repository.
-
-If a feature requires collaboration from several team members, a git branch may
-be easier than a fork and is an acceptable alternative in that situation.
-
 ## Squashing / rebasing commits
 
 Individual contributors may choose to rebase and [squash
@@ -73,7 +62,7 @@ This team does not have a standard QA process.
 
 * Don't merge your own pull request. Find a friend to review your code and merge your pull request.
 * Pull requests should contain some tests. Ideally they would contain decent test coverage.
-* If you make changes to the API, please help update the API documentation. 
+* If you make changes to the API, please help update the API documentation.
 
 When creating a new pull request:
 

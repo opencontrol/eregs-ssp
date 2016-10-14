@@ -38,18 +38,23 @@ RUN apt-get update \
     && gem install sass \
     && rm -rf /var/lib/apt/lists/*
 
+ENV PYTHONUNBUFFERED="1" \
+    DATABASE_URL="sqlite:////app/db/db.sqlite" \
+    PATH="$PATH:."
+
 # Requirements
 COPY ["requirements/web.txt", "/app/src/requirements.txt"]
 WORKDIR /app/src
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Then the UI files
+# (indirectly) install the Node dependencies so they are cached in a layer
 COPY ["manage.py", "/app/src/"]
-COPY ["atf_eregs", "/app/src/atf_eregs"]
+COPY ["atf_eregs/__init__.py", "/app/src/atf_eregs/"]
+COPY ["atf_eregs/settings/", "/app/src/atf_eregs/settings/"]
+RUN ["manage.py", "compile_frontend"]
 
-ENV PYTHONUNBUFFERED="1" \
-    DATABASE_URL="sqlite:////app/db/db.sqlite" \
-    PATH="$PATH:."
+# Then the UI files
+COPY ["atf_eregs", "/app/src/atf_eregs"]
 
 # And compile them
 RUN ["manage.py", "compile_frontend"]
