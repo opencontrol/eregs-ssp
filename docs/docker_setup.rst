@@ -27,12 +27,12 @@ If you're tweaking `the XML input file <input/annual/CFR-2016-title27-vol3-part6
 
 .. code-block:: bash
 
-  docker-compose run web
+  docker-compose up --build web
 
-Then run the parser from a separate terminal:
+You will need to restart this to pick up any asset changes. Run the parser from a separate terminal to populate the database:
 
 .. code-block:: bash
 
-  docker-compose run parser
+  docker-compose up parser
 
 After the XML file is modified, re-run this last command and reload the page to see the changes reflected.
