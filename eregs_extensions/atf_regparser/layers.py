@@ -9,9 +9,6 @@ import yaml
 from regparser.layer.layer import Layer
 
 
-JSON_URL = 'https://www.atf.gov/rules-and-regulations/json'
-
-
 class Rulings(Layer):
     """ATF has associated "ruling" documents, which we'd like to tag to
     particular paragraphs. To do that we need to
@@ -35,25 +32,8 @@ class Rulings(Layer):
 
     @classmethod
     def doc_metadata(cls):
-        """Convert results from www.atf.gov into a dict, associating ruling
-        ids with meta data about that ruling"""
-        listing = requests.get(JSON_URL).json()
-        listing = [n.get('node', {}) for n in listing.get('nodes', [])]
-        listing = [n for n in listing if n.get('Document Type') == 'Ruling']
-        docs = {}
-        for meta in listing:
-            match = cls.SPLIT_RE.match(meta.get('Title', ''))
-            if not match:
-                logging.warning('Could not parse ruling title: %s',
-                                meta.get('Title', ''))
-            else:
-                ident = match.group('id')
-                docs[ident] = {'url': meta.get('URL', ''),
-                               'id': ident,
-                               'title': match.group('title')}
-        if not docs:
-            logging.warning('No results from www.atf.gov. Format changed?')
-        return docs
+        """Placeholder method."""
+        return {}
 
     def pre_process(self):
         """Sets self.label_to_rulings to be of the form:
