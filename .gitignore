@@ -73,3 +73,5 @@ pip-selfcheck.json
 
 # docs
 docs/_build
+
+vendor/
