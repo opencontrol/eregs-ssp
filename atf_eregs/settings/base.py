@@ -21,8 +21,7 @@ DATABASES = {
     )
 }
 
-API_BASE = 'http://localhost:{}/api/'.format(
-    os.environ.get('VCAP_APP_PORT', '8000'))
+API_BASE = 'http://localhost:8000/api/'
 
 STATICFILES_DIRS = ['compiled']
 
