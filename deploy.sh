@@ -1,24 +1,15 @@
 set -e
 
-API="https://api.cloud.gov"
-ORG="atf-eregs"
+API="https://api.fr.cloud.gov"
+ORG="sandbox-gsa"
 SPACE=$1
 
-if [ $# -ne 1 ]; then
-  echo "Usage: deploy <space>"
-  exit
-fi
+# cf login --a $API --u $CF_USERNAME --p $CF_PASSWORD --o $ORG -s $SPACE
 
-if [ $SPACE = 'prod' ]; then
-  NAME="atf-eregs"
-  MANIFEST="manifest_prod.yml"
-elif [ $SPACE = 'dev' ]; then
-  NAME="atf-site"
-  MANIFEST="manifest_dev.yml"
-else
-  echo "Unknown space: $SPACE"
-  exit
-fi
+# http://docs.cloudfoundry.org/buildpacks/python/#vendoring
+mkdir -p vendor
+# https://lincolnloop.com/blog/automated-no-prompt-deployment-pip/
+yes i | pip download -r requirements.txt -d vendor
 
-cf login --a $API --u $CF_USERNAME --p $CF_PASSWORD --o $ORG -s $SPACE
-cf zero-downtime-push $NAME -f $MANIFEST
+# cf zero-downtime-push
+cf push
