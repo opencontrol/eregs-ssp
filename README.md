@@ -13,10 +13,10 @@ Requirements:
 
 ```
 # Usage
-# ./deploy-cf.sh <dockerhub repo> <app name>
+# ./deploy-cf.sh <app name>
 
 # Example
-$ ./deploy-cf.sh jcscottiii/ssperegs my-ssp-eregs
+$ ./deploy-cf.sh my-ssp-eregs
 ```
 
 This is an experiment to render compliance documentation (as a System Security Plan) in the [eRegs](https://eregs.github.io/) platform. Follow [these instructions](docs/docker_setup.rst) to get it running.
